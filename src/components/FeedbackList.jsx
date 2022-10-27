@@ -4,7 +4,7 @@ import FeedbackItem from './FeedbackItem'
 import React from 'react'
 import FeedbackContext from '../context/FeedbackContext'
     
-function FeedbackList({ handleDelete }) {
+function FeedbackList() {
     const {feedback} = useContext(FeedbackContext)
 
     
@@ -24,7 +24,7 @@ function FeedbackList({ handleDelete }) {
                         <FeedbackItem 
                             key={item.id} 
                             item={item}
-                            handleDelete = {handleDelete} />
+                         />
                     </motion.div>
                 ))}
             </AnimatePresence>
